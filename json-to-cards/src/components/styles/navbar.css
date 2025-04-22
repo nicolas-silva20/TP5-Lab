@@ -1,0 +1,40 @@
+.navbar {
+    background-color: #333; 
+    padding: 0px 20px; /* Espaciado superior/inferior y lateral */
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupar todo el ancho */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.nav-links {
+    list-style: none; /* Sin puntos en la lista */
+    display: flex; /* Flexbox para alinear horizontalmente */
+    justify-content: space-around; /* Espacio entre los elementos */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Margen entre los elementos */
+}
+
+.nav-links a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 8px 12px; /* Espaciado dentro de los enlaces */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo claro al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
+}
+
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo para enlace activo */
+    color: #ffffff; /* Color del texto activo */
+}
+
